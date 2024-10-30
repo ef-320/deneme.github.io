@@ -99,6 +99,13 @@ nav .menu .menu-button:hover{
     margin-top: 2px;
 }
 
+.divider {
+    width: 80%; /* Çizginin genişliği */
+    height: 1px; /* Çizginin kalınlığı */
+    background-color: #999999; /* Çizginin rengi */
+    margin: 30px auto; /* Çizgiler arası boşluk */
+
+}
 
 /* section end */
 

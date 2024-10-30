@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="tr">
-    
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Max Verstappen</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/x-icon" href="foto/max-verstappen-logo-6F7ABDEF10-seeklogo.com.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Verstappen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="foto/max-verstappen-logo-6F7ABDEF10-seeklogo.com.png">
 </head>
 <style>
-    body{
+body{
     font-family: "Poppins", sans-serif;
     background-image: url(foto/max-verstappen-f1-1920x1200-13972.jpg);
     background-size: cover;
 }
 .container{
     width: 80%;
-    margin-top: auto;
+    margin-top: 10px;
+    max-width: 100%;
+    
 }
 .content{
     color: white;
@@ -47,6 +49,64 @@
     
 }
 
+header{
+    height: 100px;
+    
+}
+
+header nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+}
+
+header nav .logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: red;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+nav .menu .menu-button{
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .25s ease;
+
+}
+
+nav .menu .menu-button:hover{
+   
+   color: white;
+
+}
+
 .ozel-liste li {
     
     color: white;
@@ -54,16 +114,37 @@
 .sağ { width: 1700px; margin: auto; text-align: justify; }
         .sol { float: left; padding: 0 30px 0 10px; }
 
+    #carouselExampleIndicators {
+    max-width: 700px; /* İstediğiniz genişliği buraya yazın */
+    margin: auto; /* Ortalamak için */
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center; /* Dikeyde ortalar */
+    
+}
+
+
+.kupa {
+    width: 30px; /* Kupanın boyutunu ayarla */
+    height: auto; /* Orantılı kalmasını sağlar */
+}
+
+.yazi {
+    font-size: 20px; /* Yazı boyutunu ayarla */
+    margin-top: 10px; /* Kupanın üstünde biraz boşluk bırak */
+    color: #999999; /* Yazı rengini ayarlayabilirsin */
+}
+    
+
 </style>
 <body>
-    
     <!--! header start -->
     <header class="container">
         <nav>
             <div class="logo">
                 <a href="https://www.redbull.com/tr-tr/athlete/max-verstappen" target="_blank">
                 <img width="150" src="https://www.redbull.com/v3/resources/images/client/header/redbullcom-logo_double-with-text.svg" alt="">
-            </a>
+                </a>
             </div>
             <div class="menu">
                 <ul>
@@ -79,43 +160,135 @@
 
     <!--! section start -->
     <div class="sağ">
-    <div class="liste-container">
-        <ul class="ozel-liste">
-
-            <li>2023 Formula 1 Dünya Şampiyonu</li>
-                <li>2022 Formula 1 Dünya Şampiyonu</li>
-                <li>2021 Formula 1 Dünya Şampiyonu</li>
-                <li>2019 İkincilik: F1 Abu Dabi Grand Prix</li>
-                <li>2019 Birincilik: F1 Brezilya Grand Prix</li>
-                <li>2019 Üçüncülük: F1 ABD Grand Prix</li>
-                <li>2019 Üçüncülük: F1 Singapur Grand Prix</li>
-                <li>2019 İkincilik: F1 Macaristan Grand Prix</li>
-                <li>2019 Birincilik: F1 Almanya Grand Prix</li>
-                <li>2019 Birincilik: F1 Avusturya Grand Prix</li>
-                <li>2019 Üçüncülük: F1 İspanya Grand Prix</li>
-                <li>2019 Üçüncülük: F1 Avustralya Grand Prix</li>
-                <li>2018 Birincilik: F1 Meksika Grand Prix</li>
-                <li>2018 Üçüncülük: F1 ABD Grand Prix</li>
-                <li>2018 Üçüncülük: F1 Japonya Grand Prix</li>
-                <li>2018 İkincilik: F1 Singapur Grand Prix</li>
-                <li>2018 Üçüncülük: F1 Belçika Grand Prix</li>
-                <li>2018 Birincilik: F1 Avusturya Grand Prix</li>
-                <li>2018 İkincilik: Fransa Grand Prix</li>
-                <li>2018 Üçüncülük: Kanada Grand Prix</li>
-                <li>2018 Üçüncülük: İspanya Grand Prix</li>
-                <li>2017 Birincilik: Meksika Grand Prix</li>
-                <li>2017 Birincilik: Malezya Grand Prix</li>
-                <li>2017 İkincilik: Japanese Grand Prix</li>
-                <li>2017 Üçüncülük: F1 Çin Grand Prix</li>
-                <li>2016 Üçüncülük: F1 Brezilya Grand Prix</li>
-                <li>2016 İkincilik: F1 Japonya Grand Prix</li>
-                <li>2016 İkincilik: Malezya Grand Prix</li>
-                <li>2016 3rd Place: Almanya Grand Prix</li>
-                <li>2016 İkincilik: Britanya Grand Prix</li>
-
-        </ul>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-100" style="background-color: rgba(0, 0, 0, 0.5); color: white; text-align: center; padding: 50px;">
+                        <img src="foto/pngtree-trophy-icon-eps-10-trophy-eps10-trophy-trophy-eps-vector-png-image_26229094.png" alt="Kupa" class="kupa">
+                        <div class="yazi">Başarılar</div>
+                        <div class="divider"></div>
+                        <h5>2023 Formula 1 Dünya Şampiyonu</h5>
+                        <div class="divider"></div>                
+                        <h5>2022 Formula 1 Dünya Şampiyonu</h5>
+                        <div class="divider"></div>                
+                        <h5>2021 Formula 1 Dünya Şampiyonu</h5>
+                        <div class="divider"></div>               
+                        <h5>2019 İkincilik: F1 Abu Dabi Grand Prix</h5>
+                        <div class="divider"></div>               
+                        <h5>2019 Birincilik: F1 Brezilya Grand Prix</h5>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100" style="background-color: rgba(0, 0, 0, 0.5); color: white; text-align: center; padding: 50px;">
+                        <img src="foto/pngtree-trophy-icon-eps-10-trophy-eps10-trophy-trophy-eps-vector-png-image_26229094.png" alt="Kupa" class="kupa">
+                        <div class="yazi">Başarılar</div>
+                        <div class="divider"></div>
+                        <h5>2019 Üçüncülük: F1 ABD Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2019 Üçüncülük: F1 Singapur Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2019 İkincilik: F1 Macaristan Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2019 Birincilik: F1 Almanya Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2019 Birincilik: F1 Avusturya Grand Prix</h5>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100" style="background-color: rgba(0, 0, 0, 0.5); color: white; text-align: center; padding: 50px;">
+                        <img src="foto/pngtree-trophy-icon-eps-10-trophy-eps10-trophy-trophy-eps-vector-png-image_26229094.png" alt="Kupa" class="kupa">
+                        <div class="yazi">Başarılar</div>
+                        <div class="divider"></div>
+                        <h5>2019 Üçüncülük: F1 İspanya Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2019 Üçüncülük: F1 Avustralya Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2018 Birincilik: F1 Meksika Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2018 Üçüncülük: F1 ABD Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2018 Üçüncülük: F1 Japonya Grand Prix</h5>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100" style="background-color: rgba(0, 0, 0, 0.5); color: white; text-align: center; padding: 50px;">
+                        <img src="foto/pngtree-trophy-icon-eps-10-trophy-eps10-trophy-trophy-eps-vector-png-image_26229094.png" alt="Kupa" class="kupa">
+                        <div class="yazi">Başarılar</div>
+                        <div class="divider"></div>
+                        <h5>2018 İkincilik: F1 Singapur Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2018 Üçüncülük: F1 Belçika Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2018 Birincilik: F1 Avusturya Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2018 İkincilik: Fransa Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2018 Üçüncülük: Kanada Grand Prix</h5>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100" style="background-color: rgba(0, 0, 0, 0.5); color: white; text-align: center; padding: 50px;">
+                        <img src="foto/pngtree-trophy-icon-eps-10-trophy-eps10-trophy-trophy-eps-vector-png-image_26229094.png" alt="Kupa" class="kupa">
+                        <div class="yazi">Başarılar</div>
+                        <div class="divider"></div>
+                         <h5>2018 Üçüncülük: İspanya Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2017 Birincilik: Meksika Grand Prix</h5>
+                        <div class="divider"></div>
+                       <h5>2017 Birincilik: Malezya Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2017 İkincilik: Japanese Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2017 Üçüncülük: F1 Çin Grand Prix</h5>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100" style="background-color: rgba(0, 0, 0, 0.5); color: white; text-align: center; padding: 50px;">
+                        <img src="foto/pngtree-trophy-icon-eps-10-trophy-eps10-trophy-trophy-eps-vector-png-image_26229094.png" alt="Kupa" class="kupa">
+                        <div class="yazi">Başarılar</div>
+                        <div class="divider"></div>
+                         <h5>2016 Üçüncülük: F1 Brezilya Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2016 İkincilik: F1 Japonya Grand Prix</h5>
+                        <div class="divider"></div>
+                     <h5>2016 İkincilik: Malezya Grand Prix</h5>
+                        <div class="divider"></div>
+                            <h5>2016 3rd Place: Almanya Grand Prix</h5>
+                        <div class="divider"></div>
+                        <h5>2016 İkincilik: Britanya Grand Prix</h5>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
+</div>
     <!--! section end -->
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
